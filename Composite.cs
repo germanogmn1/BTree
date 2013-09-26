@@ -37,11 +37,13 @@ namespace BTree
             return (this as IEnumerable<Behaviour>).GetEnumerator();
         }
 
-        protected Behaviour this[int index] {
+        protected Behaviour this[int index]
+        {
             get { return children[index]; }
         }
 
-        protected int Count {
+        protected int Count
+        {
             get { return children.Count; }
         }
 
